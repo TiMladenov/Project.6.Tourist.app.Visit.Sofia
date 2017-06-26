@@ -7,20 +7,26 @@ import android.support.v7.app.AppCompatActivity;
  */
 
 public class DisplayInfo extends AppCompatActivity {
-    //    private int mImageLocation;
+    private int mImageLocation = -1;
+    private final int noImageLocation = -1;
     private String mCompanyName;
     private String mTelefonNum;
     private String mCompany = DataHolder.getInstace().getmString();
 
     DisplayInfo() {
-//        this.mImageLocation = 0;
+        this.mImageLocation = 0;
         this.mCompanyName = new String();
         this.mTelefonNum = new String();
         this.mCompany = new String();
     }
 
     DisplayInfo(String mCompanyName, String mTelefonNum) {
-//        this.mImageLocation = mImageLocation;
+        this.mCompanyName = mCompanyName;
+        this.mTelefonNum = mTelefonNum;
+    }
+
+    DisplayInfo(String mCompanyName, String mTelefonNum, int mImageLocation) {
+        this.mImageLocation = mImageLocation;
         this.mCompanyName = mCompanyName;
         this.mTelefonNum = mTelefonNum;
     }
@@ -47,5 +53,17 @@ public class DisplayInfo extends AppCompatActivity {
 
     public String getmCompany() {
         return this.mCompany;
+    }
+
+    public boolean hasImage() {
+        if(mImageLocation == noImageLocation) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public int getmImageLocation() {
+        return this.mImageLocation;
     }
 }

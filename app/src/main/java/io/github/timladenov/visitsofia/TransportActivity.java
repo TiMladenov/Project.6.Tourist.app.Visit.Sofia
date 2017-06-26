@@ -1,14 +1,14 @@
 package io.github.timladenov.visitsofia;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -22,8 +22,17 @@ public class TransportActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         setContentView(R.layout.activity_transport);
+
+        TextView toCityTransport = (TextView) findViewById(R.id.visit_mobility_website);
+        toCityTransport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String URL = "https://sofiatraffic.bg/en/";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(URL));
+                startActivity(intent);
+            }
+        });
 
         mInfo = new ArrayList<DisplayInfo>();
 

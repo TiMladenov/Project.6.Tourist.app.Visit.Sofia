@@ -1,50 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_transport"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:gravity="center_horizontal"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
     tools:context="io.github.timladenov.visitsofia.TransportActivity">
 
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="@dimen/margin_15"
-        android:gravity="center"
-        android:background="@android:color/darker_gray"
-        android:layout_marginBottom="@dimen/margin_30"
-        android:textAlignment="center"
-        android:text="Transport activity"/>
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sightseeing_menu_background" />
 
-    <LinearLayout
+    <View
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginBottom="@dimen/margin_10"
-        android:orientation="vertical"
-        android:gravity="center_horizontal|bottom">
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background="@android:color/black" />
 
-        <View
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/black"/>
+            android:layout_height="wrap_content">
 
-        <Spinner
-            android:id="@+id/transportSpinner"
-            android:layout_width="@dimen/button_width_250dp"
-            android:layout_height="@dimen/button_height_35dp" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/black"/>
+            <ScrollView
+                android:id="@+id/text_field"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_width_250dp"
+                android:background="@drawable/button_border_white"
+                android:fillViewport="true">
 
-        </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-</LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="@dimen/margin_30"
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:gravity="center"
+                        android:padding="@dimen/button_margin_5dp"
+                        android:text="@string/transport_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/textSize" />
+
+                </RelativeLayout>
+            </ScrollView>
+
+            <FrameLayout
+                android:id="@+id/visit_city_transport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_field"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin_30"
+                android:background="@drawable/button_border_white">
+
+                <TextView
+                    android:id="@+id/visit_mobility_website"
+                    style="@style/TextButtonStyle"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/visit_transport" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/spinner_layout_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/visit_city_transport"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white" />
+
+                <Spinner
+                    android:id="@+id/transportSpinner"
+                    android:layout_width="@dimen/button_width_250dp"
+                    android:layout_height="@dimen/button_height_35dp"
+                    android:layout_below="@+id/view"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

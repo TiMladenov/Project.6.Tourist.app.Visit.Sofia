@@ -23,6 +23,7 @@
     <string name="fragment_cultural">Cultural</string>
     <string name="fragment_sight">Sights</string>
     <string name="fragment_phrases">BG Assist</string>
+    <string name="visit_transport">Visit Sofia transport</string>
 
     <string-array name="transport_options">
         <item>Select an option</item>
@@ -173,6 +174,14 @@
         <item>House music</item>
         <item>Disco music</item>
     </string-array>
+
+    <string name="transport_text">
+        As Sofia is the capital city of Bulgaria, it can be accessed fairly easy by air or land. International travelers can access the city by air via Sofia International Airport, which is located at the outskirts of the city.
+        As an international airport, it server quite substantial number of airlines, most of which have offices near the airport. From there, additional transportation can be easily arranged via taxi, bus or metro to other important
+        transport hubs in the city - Central Train Station and Central Bus Station. From there, you can obtain intercity transport and visit the beautiful Bulgarian province via bus or a train. To obtain more information on travel
+        agencies, which serve the citys visitors via air or land, select the corresponding section - air or land.\nTo obtain further information on the city transport system like buses, trolleybuses, tramways and such - click on the button bellow and visit the website of the community transport company, responsible for providing transport
+        services in the city.
+    </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Visit Sofia</string>
+
+    <string name="welcome">Welcome to Sofia</string>
+    <string name="transport">Transport</string>
+    <string name="hotels">Hotels</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="night_life">Night Life</string>
+    <string name="to_visit">Places to visit</string>
+    <string name="it_works">It works</string>
+    <string name="select_option">Please select an option</string>
+    <string name="empty_string">The string is empty</string>
+
+    <string name="text_list_view">Company</string>
+    <string name="text_list_view_2">Hotel</string>
+    <string name="text_list_view_phone">Phone</string>
+
+    <string-array name="transport_options">
+        <item>Select an option</item>
+        <item>Air Travel</item>
+        <item>Land Travel</item>
+    </string-array>
+
+    <string-array name="air_companies">
+        <item>Bulgaria Air</item>
+        <item>+359 24020400</item>
+        <item>BH Air</item>
+        <item>+359 2981018</item>
+        <item>Wizz Air</item>
+        <item>090063059</item>
+        <item>Ryanair</item>
+        <item>1520444004</item>
+        <item>Air France</item>
+        <item>+359 29358230</item>
+        <item>Lufthansa</item>
+        <item>+359 2935 8210</item>
+        <item>Alitalia</item>
+        <item>+359 29802212</item>
+        <item>Qatar Airways</item>
+        <item>+359 29373465</item>
+        <item>Thomson Airways</item>
+        <item>+44 01582640036</item>
+        <item>Brittish Airways</item>
+        <item>+359 29547000</item>
+        <item>Turkish Airways</item>
+        <item>+359 29474006</item>
+        <item>EL AL Israel Airlines</item>
+        <item>+359 298724432</item>
+        <item>flyDubai</item>
+        <item>+359 29815091</item>
+    </string-array>
+
+    <string-array name="land_travel_companies">
+        <item>Trans 5</item>
+        <item>+359 29366768</item>
+        <item>Rally 13</item>
+        <item>+359 29870025</item>
+        <item>Karat S AD</item>
+        <item>+359 28120812</item>
+        <item>Ecolines</item>
+        <item>+359 29311860</item>
+        <item>Air Kona</item>
+        <item>+359 29711111</item>
+        <item>Union Ivkoni</item>
+        <item>+359 879356311</item>
+        <item>ARDA-TUR</item>
+        <item>+359 28133233</item>
+        <item>Elit 54 Ltd.</item>
+        <item>+359 888510675</item>
+        <item>BioMet</item>
+        <item>+359 28688892</item>
+        <item>BDZ-Trains</item>
+        <item>0700 10 200</item>
+        <item>Central Bus Station</item>
+        <item>0900 21000</item>
+    </string-array>
+
+    <string-array name="hotel_array">
+        <item>Best Western Europe</item>
+        <item>02 9701500</item>
+        <item>Hotel Zenith</item>
+        <item>02 9862203</item>
+        <item>Central Park Hotel</item>
+        <item>02 8058181</item>
+        <item>Gloria Palace</item>
+        <item>02 9807895</item>
+        <item>Radisson Blu Grand</item>
+        <item>02 9334334</item>
+        <item>Best Western Plus</item>
+        <item>0 29804445</item>
+        <item>Holiday Inn</item>
+        <item>02 8070707</item>
+    </string-array>
+
+    <string-array name="hotel_stars">
+        <item>4 stars</item>
+        <item>3 stars</item>
+        <item>4 stars</item>
+        <item>4 stars</item>
+        <item>4.5 stars</item>
+        <item>4 stars</item>
+        <item>5 stars</item>
+    </string-array>
+
+</resources>

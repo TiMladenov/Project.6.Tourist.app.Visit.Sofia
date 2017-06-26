@@ -21,8 +21,8 @@
 
     <string name="fragment_tourism">Tourism</string>
     <string name="fragment_cultural">Cultural</string>
-    <string name="fragment_sight">Sightseeing</string>
-    <string name="fragment_phrases">Bulgarian phrases</string>
+    <string name="fragment_sight">Sights</string>
+    <string name="fragment_phrases">BG Assist</string>
 
     <string-array name="transport_options">
         <item>Select an option</item>

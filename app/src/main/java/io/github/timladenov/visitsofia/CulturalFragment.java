@@ -13,7 +13,6 @@ import android.widget.TextView;
  */
 public class CulturalFragment extends Fragment {
 
-
     public CulturalFragment() {
         // Required empty public constructor
     }

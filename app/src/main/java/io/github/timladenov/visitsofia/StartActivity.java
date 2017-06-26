@@ -1,3 +1,10 @@
+/**
+ * @author Tihomir Mladenov tihomir.mladenov777@gmail.com
+ * Date: 27.06.2017
+ *
+ * Project 6: Tour Guide App, Android Basics Nanodegree
+ */
+
 package io.github.timladenov.visitsofia;
 
 import android.os.Bundle;
@@ -9,6 +16,12 @@ import java.util.ArrayList;
 public class StartActivity extends AppCompatActivity {
 
     private ArrayList<DisplayInfo> mInfo;
+
+    /**
+     * Check {@link HotelActivity} class for explanation on the code and variables.
+     *
+     * This class is used only by {@link TransportActivity} to inflate the selected travel view
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

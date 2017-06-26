@@ -1,12 +1,15 @@
+/**
+ * @author Tihomir Mladenov tihomir.mladenov777@gmail.com
+ * Date: 27.06.2017
+ *
+ * Project 6: Tour Guide App, Android Basics Nanodegree
+ */
+
 package io.github.timladenov.visitsofia;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-
-/**
- * Created by tmladenov on 26.06.17.
- */
 
 public class DisplayFragment extends FragmentPagerAdapter {
     public DisplayFragment(FragmentManager manager) {

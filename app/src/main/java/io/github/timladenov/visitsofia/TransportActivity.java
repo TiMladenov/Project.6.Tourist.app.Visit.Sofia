@@ -1,3 +1,10 @@
+/**
+ * @author Tihomir Mladenov tihomir.mladenov777@gmail.com
+ * Date: 27.06.2017
+ *
+ * Project 6: Tour Guide App, Android Basics Nanodegree
+ */
+
 package io.github.timladenov.visitsofia;
 
 import android.content.Intent;
@@ -15,6 +22,13 @@ import java.util.ArrayList;
 
 public class TransportActivity extends AppCompatActivity {
 
+    /**
+     * Check {@link HotelActivity} class for explanation on the code and variables.
+     *
+     * @param spinner       creates spinner for the travel type options
+     * @param adapter       stores the options from the string-array resource, feeds them to the spinner
+     */
+
     private ArrayList<DisplayInfo> mInfo;
     private String[] mResources;
 
@@ -23,6 +37,8 @@ public class TransportActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         setContentView(R.layout.activity_transport);
+
+        // Opens Sofia traffic website if selected
 
         TextView toCityTransport = (TextView) findViewById(R.id.visit_mobility_website);
         toCityTransport.setOnClickListener(new View.OnClickListener() {
@@ -45,13 +61,17 @@ public class TransportActivity extends AppCompatActivity {
                 String option = spinner.getSelectedItem().toString();
                 mResources = getResources().getStringArray(R.array.transport_options);
                 DataHolder.getInstace().setString(getResources().getString(R.string.text_list_view));
+
+                // If air travel was selected, opens the list with air travel companies
                 if(option.equals(mResources[1])) {
                     getStringResources(getResources().getStringArray(R.array.air_companies));
                     Intent intent = new Intent(getApplicationContext(), StartActivity.class);
                     DataHolder.getInstace().setArray(mInfo);
                     startActivity(intent);
                     finish();
-                } else if(option.equals(mResources[2])) {
+                }
+                // If the land travel was selected, opens the list with land travel companies
+                else if(option.equals(mResources[2])) {
                     getStringResources(getResources().getStringArray(R.array.land_travel_companies));
                     Intent intent = new Intent(getApplicationContext(), StartActivity.class);
                     DataHolder.getInstace().setArray(mInfo);

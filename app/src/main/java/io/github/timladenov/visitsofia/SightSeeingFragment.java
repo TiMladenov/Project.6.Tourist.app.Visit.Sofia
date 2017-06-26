@@ -1,5 +1,11 @@
-package io.github.timladenov.visitsofia;
+/**
+ * @author Tihomir Mladenov tihomir.mladenov777@gmail.com
+ * Date: 27.06.2017
+ *
+ * Project 6: Tour Guide App, Android Basics Nanodegree
+ */
 
+package io.github.timladenov.visitsofia;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,8 +18,9 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 /**
- * A simple {@link Fragment} subclass.
+ * Check {@link HotelActivity} class for explanation on the code and variables.
  */
+
 public class SightSeeingFragment extends Fragment {
 
     private ArrayList<DisplayInfo> mInfo;

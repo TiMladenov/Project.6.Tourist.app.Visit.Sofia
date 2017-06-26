@@ -1,12 +1,21 @@
+/**
+ * @author Tihomir Mladenov tihomir.mladenov777@gmail.com
+ * Date: 27.06.2017
+ *
+ * Project 6: Tour Guide App, Android Basics Nanodegree
+ */
+
 package io.github.timladenov.visitsofia;
 
 import java.util.ArrayList;
 
-/**
- * Created by tmladenov on 25.06.17.
- */
-
 public class DataHolder {
+
+    /**
+     * Simple singleton class, mainly used to pass quickly references to custom ArrayList Objects between the activities
+     * Also used to quickly change layout / view properties programmatically. An instance variable would be better,
+     * but nevertheless I did it for practice and knowledge.
+     * */
 
     private static final DataHolder holder = new DataHolder();
     private ArrayList<DisplayInfo> mInfo;

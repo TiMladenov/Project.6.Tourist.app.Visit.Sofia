@@ -1,3 +1,10 @@
+/**
+ * @author Tihomir Mladenov tihomir.mladenov777@gmail.com
+ * Date: 27.06.2017
+ *
+ * Project 6: Tour Guide App, Android Basics Nanodegree
+ */
+
 package io.github.timladenov.visitsofia;
 
 import android.os.Bundle;
@@ -10,6 +17,10 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class NightLifeActivity extends AppCompatActivity {
+
+    /**
+     * Check {@link HotelActivity} class for explanation on the code and variables.
+     */
 
     private ArrayList<DisplayInfo> mInfo;
     private String[] mResources;
@@ -29,6 +40,8 @@ public class NightLifeActivity extends AppCompatActivity {
         DisplayAdapter adapter = new DisplayAdapter(this, mInfo);
         ListView list = (ListView) findViewById(R.id.list);
         list.setAdapter(adapter);
+
+        // When the user taps on any of the list items, information about the style of the club will be displayed
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

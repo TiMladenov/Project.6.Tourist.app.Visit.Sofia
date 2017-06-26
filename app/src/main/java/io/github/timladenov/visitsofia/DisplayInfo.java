@@ -1,13 +1,29 @@
+/**
+ * @author Tihomir Mladenov tihomir.mladenov777@gmail.com
+ * Date: 27.06.2017
+ *
+ * Project 6: Tour Guide App, Android Basics Nanodegree
+ */
+
 package io.github.timladenov.visitsofia;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 
-/**
- * Created by tmladenov on 25.06.17.
- */
-
 public class DisplayInfo extends AppCompatActivity {
+
+    /**
+     * @param noImageLocation       constant used to determine whether an image resource was entered for the object, checks at {@link DisplayAdapter},
+     *                              hides the ImageView if resource is missing
+     * @param mImageLocation        reference to image resource
+     * @param mColorBack            reference to background color
+     * @param mHideSeparator        reference to separator view, used to hide it at {@link DisplayAdapter}
+     * @param mCompanyName          reference to company name
+     * @param mTelefonNum           reference to company phone
+     * @param mCompany              used to programmatically update the text to the textview "Company" to something else
+     * @param actionBar             reference to actionbar in activities to change its color in {@link DisplayAdapter}
+     * */
+
     private final int noImageLocation = -1;
     private int mImageLocation = -1;
     private int mColorBack = 0;

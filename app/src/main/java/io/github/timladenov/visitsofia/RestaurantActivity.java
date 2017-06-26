@@ -1,3 +1,10 @@
+/**
+ * @author Tihomir Mladenov tihomir.mladenov777@gmail.com
+ * Date: 27.06.2017
+ *
+ * Project 6: Tour Guide App, Android Basics Nanodegree
+ */
+
 package io.github.timladenov.visitsofia;
 
 import android.content.Intent;
@@ -12,6 +19,10 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class RestaurantActivity extends AppCompatActivity {
+
+    /**
+     * Check {@link HotelActivity} class for explanation on the code and variables.
+     */
 
     private ArrayList<DisplayInfo> mInfo;
     private String[] mResources;
@@ -31,6 +42,8 @@ public class RestaurantActivity extends AppCompatActivity {
         DisplayAdapter adapter = new DisplayAdapter(this, mInfo);
         ListView list = (ListView) findViewById(R.id.list);
         list.setAdapter(adapter);
+
+        // When the user taps on a list view item, an implicit intent will be started, opening the website of the selected restaurant
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

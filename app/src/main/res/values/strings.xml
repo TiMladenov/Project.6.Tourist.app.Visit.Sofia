@@ -13,7 +13,16 @@
 
     <string name="text_list_view">Company</string>
     <string name="text_list_view_2">Hotel</string>
+    <string name="text_list_view_3">Club</string>
     <string name="text_list_view_phone">Phone</string>
+    <string name="text_list_view_4">Restaurant</string>
+    <string name="club_music_style">Style:" "</string>
+    <string name="select_browser">Select browser:</string>
+
+    <string name="fragment_tourism">Tourism</string>
+    <string name="fragment_cultural">Cultural</string>
+    <string name="fragment_sight">Sightseeing</string>
+    <string name="fragment_phrases">Bulgarian phrases</string>
 
     <string-array name="transport_options">
         <item>Select an option</item>
@@ -101,5 +110,71 @@
         <item>4 stars</item>
         <item>5 stars</item>
     </string-array>
+
+    <string-array name="resto_array">
+        <item>Spaghetti Kitchen</item>
+        <item>089 056 6666</item>
+        <item>Godzilla restaurant</item>
+        <item>0700 16 010</item>
+        <item>Checkpoint Charly</item>
+        <item>02 988 0370</item>
+        <item>Talents Restaurant</item>
+        <item>02 421 9068</item>
+        <item>Pavilion 37</item>
+        <item>087 737 0137</item>
+        <item>Golden Nero</item>
+        <item>089 849 0885</item>
+        <item>Kotiloto</item>
+        <item> 02 967 2220</item>
+    </string-array>
+
+    <string-array name="resto_links">
+        <item>http://spaghetti-kitchen.com/</item>
+        <item>http://godzila.bg/</item>
+        <item>http://checkpointcharlybg.com/c/en/menu/</item>
+        <item>http://restauranttalents.bg/</item>
+        <item>https://facebook.com/Pavillion37/</item>
+        <item>http://goldennero.com/</item>
+        <item>http://kotiloto.com</item>
+    </string-array>
+
+    <string-array name="club_array">
+        <item>Studio 5</item>
+        <item>0 29631254</item>
+        <item>STIX Bar and Billiards</item>
+        <item>088 2882082</item>
+        <item>By the Way</item>
+        <item>0 298038364</item>
+        <item>Mascara</item>
+        <item>088 8113355</item>
+        <item>Grape Central</item>
+        <item>088 9820444</item>
+        <item>Skaptobara</item>
+        <item>087 7333233</item>
+        <item>KANAAL</item>
+        <item>088 2856346</item>
+        <item>Bedroom Premium</item>
+        <item>088 8860666</item>
+        <item>:PM</item>
+        <item>089 8670600</item>
+        <item>Yalta</item>
+        <item>089 7870230</item>
+    </string-array>
+
+    <string-array name="club_style">
+        <item>Social club</item>
+        <item>Bar and Billiards</item>
+        <item>Cocktail bar</item>
+        <item>Irish Restaurant</item>
+        <item>Wine Bar</item>
+        <item>Bar</item>
+        <item>Bar</item>
+        <item>House music</item>
+        <item>House music</item>
+        <item>Disco music</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

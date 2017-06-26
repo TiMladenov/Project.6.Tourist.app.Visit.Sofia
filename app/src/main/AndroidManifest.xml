@@ -50,7 +50,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".StartActivity"></activity>
+        <activity android:name=".StartActivity"/>
     </application>
 
 </manifest>

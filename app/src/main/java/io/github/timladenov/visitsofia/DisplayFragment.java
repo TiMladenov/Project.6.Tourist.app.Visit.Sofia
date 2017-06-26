@@ -22,8 +22,6 @@ public class DisplayFragment extends FragmentPagerAdapter {
                 return new CulturalFragment();
             case 2:
                 return new SightSeeingFragment();
-            case 3:
-                return new PracticeBulgarianFragment();
             default:
                 return null;
         }
@@ -31,7 +29,7 @@ public class DisplayFragment extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 3;
     }
 
     @Override
@@ -43,17 +41,6 @@ public class DisplayFragment extends FragmentPagerAdapter {
                 return "Culture";
             case 2:
                 return "Sights";
-            case 3:
-                return "Assist";
-
-//            case 0:
-//                return Resources.getSystem().getString(R.string.fragment_tourism);
-//            case 1:
-//                return Resources.getSystem().getString(R.string.fragment_cultural);
-//            case 2:
-//                return Resources.getSystem().getString(R.string.fragment_sight);
-//            case 3:
-//                return Resources.getSystem().getString(R.string.fragment_phrases);
             default:
                 return null;
         }

@@ -47,7 +47,7 @@ public class RestaurantActivity extends AppCompatActivity {
         if (mResources != null) {
             for (int i = 1; i < mResources.length; i++) {
                 int j = i;
-                mInfo.add(new DisplayInfo(mResources[--j], mResources[i], getResources().getString(R.string.text_list_view_4)));
+                mInfo.add(new DisplayInfo(mResources[--j], mResources[i], getResources().getString(R.string.text_list_view_4), R.mipmap.ic_launcher, R.color.list_resto));
                 i++;
             }
             String checkWord = getResources().getString(R.string.text_list_view);

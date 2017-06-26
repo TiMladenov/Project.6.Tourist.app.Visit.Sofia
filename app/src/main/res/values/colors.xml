@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3a59bd</color>
+    <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="whiteColor">#FFFFFF</color>
+    <color name="list_view_bkgrn">#C5CAE9</color>
+    <color name="list_transport">#3F51B5</color>
+    <color name="list_hotel">#7CB342</color>
+    <color name="separator_color">#5C6BC0</color>
+    <color name="list_resto">#00897B</color>
+    <color name="list_club">#3F51B5</color>
 </resources>

@@ -71,7 +71,7 @@ public class TransportActivity extends AppCompatActivity {
         if(mResources != null) {
             for(int i = 1; i < mResources.length; i++) {
                 int j = i;
-                mInfo.add(new DisplayInfo(mResources[--j], mResources[i], R.mipmap.ic_launcher));
+                mInfo.add(new DisplayInfo(mResources[--j], mResources[i], R.mipmap.ic_launcher, R.color.list_transport));
                 i++;
             }
         } else {

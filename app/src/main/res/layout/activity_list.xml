@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--can have background and if the adapter that used the listview has invisible background, the listview
+background will be seen-->
 <ListView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:id="@+id/list"
     android:layout_height="match_parent"
     android:drawSelectorOnTop="true"
     android:descendantFocusability="blocksDescendants">
-
 </ListView>

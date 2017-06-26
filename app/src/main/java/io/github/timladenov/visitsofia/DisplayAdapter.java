@@ -2,13 +2,16 @@ package io.github.timladenov.visitsofia;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -35,6 +38,15 @@ public class DisplayAdapter extends ArrayAdapter<DisplayInfo> {
 
         ImageView image = (ImageView) listItemsView.findViewById(R.id.image_2);
         image.setVisibility(View.GONE);
+
+        if(myWord.canHideSeparator()) {
+            View separator = listItemsView.findViewById(R.id.separator);
+            separator.setVisibility(View.GONE);
+
+            ActionBar actionBar = myWord.getmActionbar();
+            actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#81C784")));
+        }
+
         if(myWord.hasImage()) {
             image.setVisibility(View.VISIBLE);
             image.setImageResource(myWord.getmImageLocation());
@@ -45,6 +57,14 @@ public class DisplayAdapter extends ArrayAdapter<DisplayInfo> {
             TextView txt = (TextView) listItemsView.findViewById(R.id.company_name);
             txt.setText(myWord.getmCompany());
         }
+
+        if (!(myWord.getmCompany().equals(DataHolder.getInstace().getmString_2())) && (DataHolder.getInstace().getmString_2() != null)) {
+            TextView txt = (TextView) listItemsView.findViewById(R.id.company_phone);
+            txt.setText(DataHolder.getInstace().getmString_2());
+        }
+
+        RelativeLayout relLayout = (RelativeLayout) listItemsView.findViewById(R.id.text_container_list);
+        relLayout.setBackgroundResource(myWord.getmColorBack());
 
         TextView mCompanyName = (TextView) listItemsView.findViewById(R.id.text1);
         mCompanyName.setText(myWord.getmCompanyName());

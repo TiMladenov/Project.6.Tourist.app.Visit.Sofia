@@ -16,8 +16,14 @@
     <string name="text_list_view_3">Club</string>
     <string name="text_list_view_phone">Phone</string>
     <string name="text_list_view_4">Restaurant</string>
+    <string name="text_list_view_5">Location</string>
     <string name="club_music_style">Style:" "</string>
     <string name="select_browser">Select browser:</string>
+    <string name="price">Price</string>
+    <string name="rating">Rating</string>
+    <string name="visited">Visited\t</string>
+    <string name="visited_times">\ttimes</string>
+    <string name="visits">Visits</string>
 
     <string name="fragment_tourism">Tourism</string>
     <string name="fragment_cultural">Cultural</string>
@@ -50,7 +56,7 @@
         <item>+359 29373465</item>
         <item>Thomson Airways</item>
         <item>+44 01582640036</item>
-        <item>Brittish Airways</item>
+        <item>British Airways</item>
         <item>+359 29547000</item>
         <item>Turkish Airways</item>
         <item>+359 29474006</item>
@@ -182,6 +188,73 @@
         agencies, which serve the citys visitors via air or land, select the corresponding section - air or land.\nTo obtain further information on the city transport system like buses, trolleybuses, tramways and such - click on the button bellow and visit the website of the community transport company, responsible for providing transport
         services in the city.
     </string>
+
+    <string-array name="tourism_locations">
+        <item>Rila Monastery</item>
+        <item>59.95</item>
+        <item>Boyana Church</item>
+        <item>36.77</item>
+        <item>Vitosha Mountain</item>
+        <item>50.00</item>
+        <item>Ledenika Caves</item>
+        <item>80.00</item>
+        <item>Sofia Full-Day Tour</item>
+        <item>40.00</item>
+        <item>Trip to Beograd</item>
+        <item>120.00</item>
+        <item>Sofia Food Tasting</item>
+        <item>90.00</item>
+        <item>Visit Seven Rila Lakes</item>
+        <item>120.00</item>
+        <item>Sofia Evening Tour</item>
+        <item>Free</item>
+        <item>Plovdiv wine tasting</item>
+        <item>80.00</item>
+        <item>Trip to Nis</item>
+        <item>60.00</item>
+    </string-array>
+
+    <string-array name="sightseeing_location">
+        <item>Alexandar Nevski cath.</item>
+        <item>1</item>
+        <item>Vitosha Montain</item>
+        <item>2</item>
+        <item>Saint Nikolas church</item>
+        <item>3</item>
+        <item>Boyana church</item>
+        <item>4</item>
+        <item>365 culture tour</item>
+        <item>5</item>
+        <item>Sofia Communist tour</item>
+        <item>6</item>
+        <item>Sofia Graffiti tour</item>
+        <item>7</item>
+        <item>Buzludzha tour</item>
+        <item>8</item>
+        <item>Sofia walks</item>
+        <item>9</item>
+        <item>Palace of Culture</item>
+        <item>10</item>
+        <item>National Assembly</item>
+        <item>11</item>
+        <item>Academy of Science</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="museum_location">
+        <item>Archeology Museum</item>
+        <item>Museum of History</item>
+        <item>Museum of Mil. History</item>
+        <item>Museum of Socialist Art</item>
+        <item>Museum of Natural History</item>
+        <item>Sofia History Museum</item>
+        <item>National Art Gallery</item>
+        <item>Ethnographic Institute</item>
+        <item>Sofia City Art Gallery</item>
+        <item>Earth and Man Museum</item>
+        <item>Polytechnical Museum</item>
+        <item>Anthropol. Museum</item>
+    </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

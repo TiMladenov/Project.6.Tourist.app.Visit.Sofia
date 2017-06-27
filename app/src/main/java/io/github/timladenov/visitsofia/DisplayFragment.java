@@ -7,13 +7,18 @@
 
 package io.github.timladenov.visitsofia;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class DisplayFragment extends FragmentPagerAdapter {
-    public DisplayFragment(FragmentManager manager) {
+
+    private Context context;
+
+    public DisplayFragment(FragmentManager manager, Context context) {
         super(manager);
+        this.context = context;
     }
 
     @Override
@@ -39,11 +44,11 @@ public class DisplayFragment extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "Tourism";
+                return context.getString(R.string.fragment_tourism);
             case 1:
-                return "Culture";
+                return context.getString(R.string.fragment_cultural);
             case 2:
-                return "Sights";
+                return context.getString(R.string.fragment_sight);
             default:
                 return null;
         }

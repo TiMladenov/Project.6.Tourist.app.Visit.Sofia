@@ -55,7 +55,7 @@ public class NightLifeActivity extends AppCompatActivity {
         if (mResources != null) {
             for (int i = 1; i < mResources.length; i++) {
                 int j = i;
-                mInfo.add(new DisplayInfo(mResources[--j], mResources[i], getResources().getString(R.string.text_list_view_3), R.mipmap.ic_launcher, R.color.list_club));
+                mInfo.add(new DisplayInfo(mResources[--j], mResources[i], getResources().getString(R.string.text_list_view_3), R.mipmap.ic_launcher, R.color.list_club, false, getSupportActionBar()));
                 i++;
             }
             String checkWord = getResources().getString(R.string.text_list_view);

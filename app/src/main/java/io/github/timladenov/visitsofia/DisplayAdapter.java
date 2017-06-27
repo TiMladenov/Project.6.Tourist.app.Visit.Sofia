@@ -8,8 +8,8 @@
 package io.github.timladenov.visitsofia;
 
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
@@ -25,8 +25,13 @@ import java.util.ArrayList;
 
 public class DisplayAdapter extends ArrayAdapter<DisplayInfo> {
 
+    private Context ActivityContext;
+    private String mActivity;
+
     DisplayAdapter(Activity context, ArrayList<DisplayInfo> listItems) {
         super(context, 0, listItems);
+        this.ActivityContext = context;
+        this.mActivity = context.getClass().getSimpleName();
     }
 
     @NonNull
@@ -45,12 +50,26 @@ public class DisplayAdapter extends ArrayAdapter<DisplayInfo> {
 
 
         // checks if can hide separator in list item
-        if(myWord.canHideSeparator()) {
-            View separator = listItemsView.findViewById(R.id.separator);
-            separator.setVisibility(View.GONE);
+        if(myWord.getmActionbar() != null) {
+
+            if(myWord.canHideSeparator()) {
+                View separator = listItemsView.findViewById(R.id.separator);
+                separator.setVisibility(View.GONE);
+            }
 
             ActionBar actionBar = myWord.getmActionbar();
-            actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#81C784")));
+
+            switch (mActivity) {
+                case "HotelActivity":
+                    actionBar.setBackgroundDrawable(ActivityContext.getResources().getDrawable(R.color.list_hotel_action_bar));
+                    break;
+                case "RestaurantActivity":
+                    actionBar.setBackgroundDrawable(ActivityContext.getResources().getDrawable(R.color.list_resto_action_bar));
+                    break;
+                case "NightLifeActivity":
+                    actionBar.setBackgroundDrawable(ActivityContext.getResources().getDrawable(R.color.list_club_action_bar));
+                    break;
+            }
         }
 
         // restores imageview if image resource is available

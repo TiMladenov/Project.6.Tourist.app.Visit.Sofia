@@ -28,7 +28,7 @@ public class ThingsToDoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_things_to_do);
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        DisplayFragment adapter = new DisplayFragment(getSupportFragmentManager());
+        DisplayFragment adapter = new DisplayFragment(getSupportFragmentManager(), getApplicationContext());
         viewPager.setAdapter(adapter);
 
         TabLayout tableLayout = (TabLayout) findViewById(R.id.tablayout);

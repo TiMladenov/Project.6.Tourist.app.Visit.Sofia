@@ -67,17 +67,16 @@ public class TourismFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        DataHolder.getInstace().setString_2(null);
-        rootView = null;
-        mInfo = null;
-        mResources = null;
-        adapter = null;
-        list = null;
+        releaseResources();
     }
 
     @Override
     public void onStop() {
         super.onStop();
+        releaseResources();
+    }
+
+    private void releaseResources() {
         DataHolder.getInstace().setString_2(null);
         rootView = null;
         mInfo = null;

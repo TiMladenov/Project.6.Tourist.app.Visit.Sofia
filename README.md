@@ -1,5 +1,5 @@
 # Project 6: Tourist app - "Visit Sofia"
-v2.0 of Udacity Project 3 - Quiz application
+v2.0 of Udacity Project 6 - Tourist app
 
 # Description
 In this project, I made my own multi-screen Android app to share my knowledge about a city I was very familiar with.
